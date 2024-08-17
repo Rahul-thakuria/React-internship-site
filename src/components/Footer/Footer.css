@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+footer {
+  padding: 50px 5% 5px;
+  background: #f5f5f5;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2.5rem;
+}
+
+.indidiv h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.indidiv p {
+  margin: 20px 0;
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 250px;
+  text-align: left;
+}
+
+.indidiv h4 {
+  color: black;
+  margin-bottom: 1.5rem;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.indidiv li a {
+  display: block;
+  color: rgb(14, 7, 7);
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+.indidiv li a:hover {
+  transform: translateX(-5px);
+  color: grey;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons svg {
+  font-size: 20px;
+  color: black;
+  transition: color 0.4s ease;
+}
+
+.social-icons svg:hover {
+  color: grey;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.endp1 {
+  color: grey;
+  font-size: 14px;
+}
+
+.paycons {
+  display: flex;
+  gap: 15px;
+}
+
+.paycons img {
+  height: 24px;
+  margin-left: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 5% 5px;
+  }
+
+  .footer {
+    gap: 1.5rem;
+  }
+
+  .indidiv h1 {
+    font-size: 26px;
+  }
+
+  .indidiv p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .indidiv h4 {
+    font-size: 14px;
+  }
+
+  .indidiv li a {
+    font-size: 14px;
+  }
+
+  .social-icons svg {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .paycons {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 20px 5% 5px;
+  }
+
+  .footer {
+    gap: 1rem;
+  }
+
+  .indidiv h1 {
+    font-size: 24px;
+  }
+
+  .indidiv p {
+    font-size: 13px;
+  }
+
+  .indidiv h4 {
+    font-size: 13px;
+  }
+
+  .indidiv li a {
+    font-size: 13px;
+  }
+
+  .social-icons svg {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    padding: 15px 0;
+  }
+
+  .paycons img {
+    height: 20px;
+    margin-left: 5px;
+  }
+}
